@@ -1,32 +1,33 @@
 This is a custom protocol working on TCP. The server acts as a computational engine that supports three operations:
 
-Multiplication of N signed integers
+# Multiplication of N signed integers
 
-# N must be between 2 and 10
-# Each integer must be between -5 and 5
-# Server returns the product
+N must be between 2 and 10
+Each integer must be between -5 and 5
+Server returns the product
 
-Average of N integers
+# Average of N integers
 
-# N must be between 2 and 20
-# Each integer must be between 0 and 200
-# Server returns the average
+N must be between 2 and 20
+Each integer must be between 0 and 200
+Server returns the average
 
-Subtraction of two sets of N integers
+# Subtraction of two sets of N integers
 
-# N must be between 2 and 10
-# Integers must be between 0 and 60000
-# Server subtracts each element of the second set from the first and returns the result set
+N must be between 2 and 10
+Integers must be between 0 and 60000
+Server subtracts each element of the second set from the first and returns the result set
 
 
-Protocol Requirements:
+# Protocol Requirements:
 The client sends:
-------------------------------------------------------------------------------------------
+
 The operation type (A, B, or C)
 The required number(s)
 
+
 The server replies:
-------------------------------------------------------------------------------------------
+
 Either the correct result
 Or an error message indicating the type of error (e.g., invalid input range)
 
