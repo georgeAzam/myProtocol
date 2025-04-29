@@ -1,5 +1,5 @@
 This is a custom protocol working on TCP. The server acts as a computational engine that supports three operations:
-
+-------------------------------------------------------------------------------------------------------------------
 # Multiplication of N signed integers
 
 N must be between 2 and 10
@@ -30,6 +30,8 @@ The server replies:
 
 Either the correct result
 Or an error message indicating the type of error (e.g., invalid input range)
+
+# Info about the files
 
 The are two files (one for client and one for the server) that works as a toolbox.
 They have functions to help with the main code for client and server, so we can keep it clean and easy to read.
